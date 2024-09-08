@@ -18,6 +18,15 @@ public class UserAccount {
     @Column(nullable = false, unique = true, length = 50)
     private String email;
 
+    public UserAccount(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
+    public UserAccount() {
+
+    }
 
     public String getUsername() {
         return username;
